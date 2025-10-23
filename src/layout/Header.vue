@@ -27,13 +27,13 @@
         <div class="header2">
             <h1>Development Sprint Board</h1>
             <div class="avatar2">
-                <div class="avatar" data-labe="JD">
+                <div class="avatar color-avatar" data-labe="JD">
                     <p>C</p>
                 </div>
-                <div class="avatar" data-labe="JD">
+                <div class="avatar color-avatar1" data-labe="JD">
                     <p>C</p>
                 </div>
-                <div class="avatar" data-labe="JD">
+                <div class="avatar color-avatar2" data-labe="JD">
                     <p>C</p>
                 </div>
             </div>
@@ -120,7 +120,7 @@
 .notification-link {
     width: 18px;
     height: 20px;
-    margin-left: 20px;
+    margin-left: 20px;  
 }
 
 .help-link{
@@ -135,7 +135,6 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #791daf;
     color:#fff;
     font-weight: bold;
     content: attr(data-label);
@@ -145,5 +144,14 @@
 }
 .avatar2{
     margin-left: auto;  
+}
+.color-avatar{
+    background-color: #791daf;
+}
+.color-avatar1{
+    background-color: #71fc14;
+}
+.color-avatar2{
+    background-color: #fc2f14;
 }
 </style>
