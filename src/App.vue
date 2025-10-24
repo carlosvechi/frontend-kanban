@@ -4,6 +4,7 @@ import Header from './layout/Header.vue'
 import Board from './components/Board.vue'
 import Footer from './layout/Footer.vue'
 import api from './services/api'
+import Teste2 from './layout/Teste2.vue'
 
 const list_columns = reactive([])
 const list_todo = reactive([])
@@ -29,11 +30,13 @@ onMounted(fetchData)
 </script>
 
 <template>
-  <Header />
+  <!-- <Header />
   <main>
     <Board />
   </main>
-  <Footer />
+  <Footer /> -->
+
+  <Teste2 />
 </template>
 
 <style>
