@@ -51,7 +51,8 @@ function closeColumnModal(){
 async function addColumn(newColumn){
   try {
     const response = await api.post('/positions', newColumn)
-    list_columns.push(response.data)
+    const column = { ...response.data, taskC: [] }
+    list_columns.push(column)
     closeColumnModal()
   } catch (err) {
     console.error('Erro ao criar coluna:', err)
@@ -91,7 +92,7 @@ fetchData()
     >
       <div class="column-header">
         <h2>{{ column.titleC }}</h2>
-        <span>{{ column.taskC.length }}</span>
+        <span>{{ column.taskC? column.TaskC.lenght:0}}</span>
       </div>
 
       <draggable

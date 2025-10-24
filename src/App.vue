@@ -33,7 +33,7 @@ onMounted(fetchData)
   <main>
     <Board />
   </main>
-  <Footer/>
+  <Footer />
 </template>
 
 <style>
